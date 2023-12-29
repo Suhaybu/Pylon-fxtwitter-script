@@ -1,13 +1,14 @@
 # Pylon-fxtwitter-script
 
-This is a simple script that can be used on [Pylon.bot](https://pylon.bot) that automatically fixes broken embeds of twitter in discord messages. Pylon allows you to run custom TypeScript code on their bot for free.
+This is a simple TypeScript function that can be used on [Pylon.bot](https://pylon.bot) for automatically fixing broken twitter.com/x.com embeds in Discord messages.
+Pylon allows you to run custom TypeScript code on their bot for free. [FxTwitter by FixTweet](https://github.com/FixTweet/FxTwitter) fixes the embeds.
 
 ## How does it work?
 
-- The script checks if the message contains either twitter.com or x.com.
-- Messages that contain either will make the Pylon bot respond to the original message without pinging the user
+- The script checks if the message contains either twitter.com or x.com
+- Messages that contain either links will result in Pylon bot responding to the original message with the embed without pinging the user it's responding to
 - The response is in the format "@`user` via Twitter" where `user` is the author of the tweet
-- The original twitter.com / X.com link is switched to [FXtwitter.com / Fixup.com](https://github.com/FixTweet/FxTwitter) to make the embeds functional again
+- The original twitter.com / X.com link is switched to [FXtwitter.com / Fixup.com](https://github.com/FixTweet/FxTwitter) to make the embeds functional
 
 ```ts
 discord.on('MESSAGE_CREATE', async (message) => {
