@@ -6,7 +6,7 @@ This is a simple script that can be used on [Pylon.bot](https://pylon.bot) that 
 
 - The script checks if the message contains either twitter.com or x.com.
 - Messages that contain either will make the Pylon bot respond to the original message without pinging the user
-- The response is in the format "@user via Twitter" where `user` is the author of the tweet
+- The response is in the format "@`user` via Twitter" where `user` is the author of the tweet
 - The original twitter.com / X.com link is switched to [FXtwitter.com / Fixup.com](https://github.com/FixTweet/FxTwitter) to make the embeds functional again
 
 ```ts
